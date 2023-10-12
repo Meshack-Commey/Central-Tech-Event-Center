@@ -4,7 +4,6 @@ import HeroPic from '../assets/herobg.jpg'
 const HeroSection = () => {
     return (
         <>
-        <NAVBAR_AREA_PADDING></NAVBAR_AREA_PADDING>
         <CONTAINER>
             <ROW>
                 <HEROBOX>
@@ -21,11 +20,9 @@ const HeroSection = () => {
 
 
 // styled components
-const NAVBAR_AREA_PADDING = styled.div`
-    padding: 52px;
-`
 const CONTAINER = styled.div`
     border: 1px solid inherit;
+    width: 100%;
     background-image: url(${HeroPic});
     background-size: cover;
     background-repeat: no-repeat;
@@ -45,20 +42,25 @@ const CONTAINER = styled.div`
         width: 100%;
         height: 100%;
     }
+
+    @media only screen and (min-width: 1366px) {
+        margin-top: 52px;
+    }
 `
 
 const ROW = styled.div`
     border: 1px solid inherit;
     display: flex;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 50px 0;
+    width: 100%;
     max-width: 1200px;
     justify-content: left;
     align-content: left;
 `
 const HEROBOX = styled.div`
     border: 1px solid inherit;
-    margin: calc(0.5rem + 15vh) 0;
+    margin: calc(0.5rem + 15vh) calc(0.5rem + 5vw) 0;
     max-width: 700px;
 `
 const HEROTEXT = styled.h1`
@@ -66,12 +68,27 @@ const HEROTEXT = styled.h1`
     font-size: 48px;
     text-transform: uppercase;
     color: white;
+
+    @media only screen and (max-width: 745px) {
+        font-size: 2.5rem;
+    }
+    @media only screen and (max-width: 654px) {
+        font-size: 2rem;
+    }
+    @media only screen and (max-width: 480px) {
+        font-size: 1.8rem;
+    }
+    @media only screen and (max-width: 328px) {
+        font-size: 1.7rem;
+    }
 `
 const HEROPARAGRAPH = styled.p`
-    font-size: 18px;
+    font-size: 1.2rem;
     border: 1px solid inherit;
     padding: 30px 0;
     color: white;
+    text-align: justify;
+    width: 90%;
 `
 const BUTTON = styled.button`
     border: 1px solid darkcyan;

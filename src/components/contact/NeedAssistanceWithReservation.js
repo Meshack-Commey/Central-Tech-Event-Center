@@ -46,11 +46,12 @@ const BOX = styled.div`
     justify-content: center;
     align-content: center;
 `
-const H3 = styled.h3`
+const H3 = styled.span`
     font-size: 28px;
     color: darkcyan;
+    font-weight: bold;
 `
-const P = styled.p`
+const P = styled.span`
     font-size: 18px;
     color: gray;
 `

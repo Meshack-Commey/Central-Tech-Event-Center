@@ -4,7 +4,6 @@ import Celebrate from '../../assets/celebratewithus.png'
 const GalleryHeroSection = () => {
     return (
         <>
-        <NAVBAR_AREA_PADDING></NAVBAR_AREA_PADDING>
         <CONTAINER>
             <ROW>
                 <BOX>
@@ -18,9 +17,6 @@ const GalleryHeroSection = () => {
 
 
 // STYLED COMPONENTS
-const NAVBAR_AREA_PADDING = styled.div`
-    padding: 52px;
-`
 const CONTAINER = styled.div`
     border: 1px solid inherit;
     padding: 60px 0;

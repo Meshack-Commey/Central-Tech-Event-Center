@@ -74,13 +74,14 @@ const P = styled.p`
     color: gray;
 `
 const TEXT = styled(P)`
-    padding: 10px 0;
+    padding: 1px 0;
     border: 1px solid inherit;
 
 `
 const H1 = styled.h1`
     font-size: 48px;
     color: darkcyan;
+    margin: 0;
 `
 const BUTTON = styled.button`
     border: 1px solid darkcyan;
@@ -102,6 +103,7 @@ const LINK = styled(Link)`
 const MAPBOX = styled.div`
     border: 1px solid inherit;
     width: 600px;
+    margin: 0;
 `
 const IMG = styled.img`
     width: 100%;

@@ -1,5 +1,5 @@
 import ContactHeroSection from "./contact/ContactHeroSection"
-//import ContactUsForm from "./contact/ContactUsForm"
+import ContactUsForm from "./contact/ContactUsForm"
 import ExperienceTheBest from "./contact/ExperienceTheBest"
 import NeedAssistanceWithReservation from "./contact/NeedAssistanceWithReservation"
 
@@ -11,7 +11,7 @@ const ContactUsComponents = () => {
             <ContactHeroSection />
             <ExperienceTheBest />
             <NeedAssistanceWithReservation />
-            {/* <ContactUsForm /> */}
+            <ContactUsForm /> 
         </>
     )
 }

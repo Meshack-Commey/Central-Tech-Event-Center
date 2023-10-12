@@ -1,3 +1,4 @@
+import EveryThingYouNeedForASuccessfulEvent from "../components/EveryThingYouNeedForASuccessfulEvent"
 import HeroSection from "../components/HeroSection"
 import OpenAndAvailableForAllEventOccasion from "../components/OpenAndAvailableForAllEventOccasion"
 import OurSpaceYourVision from "../components/OurSpaceYourVision"
@@ -14,12 +15,13 @@ const LandingPage = () => {
         <>
             <HeroSection />
             <TopEventVenueSection />
-            <OpenAndAvailableForAllEventOccasion />
-            <OurSpaceYourVision />
-            <TopOfTheLineAmenities />
+            <EveryThingYouNeedForASuccessfulEvent />   
+            <OpenAndAvailableForAllEventOccasion />             
+            <OurSpaceYourVision /> 
+            <TopOfTheLineAmenities /> 
             <CelebrateWithYourCommunity />
             <QualityAffordableEventSpace />
-            <ContactUs />
+            <ContactUs />  
         </>
     )
 }

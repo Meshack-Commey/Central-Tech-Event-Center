@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import CONTAINER, { ROW }  from './styledComponents/Container'
 
-import Highlight from '../assets/highlight.jpg'
+import Highlight from '../assets/available4.jpg'
 
 const OurSpaceYourVision = () => {
     return (
@@ -78,9 +78,11 @@ const TEXT = styled(P)`
     border: 1px solid inherit;
 
 `
-const IMAGEBOX = styled.div`
+const IMAGEBOX = styled.figure`
     border: 1px solid inherit;
-    width: 400px;
+    width: 500px;
+    padding: 5rem 0 0 0;
+
 `
 const IMG = styled.img`
     width: 100%;

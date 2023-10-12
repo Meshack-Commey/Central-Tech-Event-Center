@@ -6,6 +6,12 @@ import { H1, H6, P } from './styledComponents/Typography.styles'
 import AffordableSpace from '../assets/affordablespace.jpg'
 
 const OpenAndAvailableForAllEventOccasion = () => {
+    const eventSpace = [
+        { "space": "Small Room", "seats": 165 },
+        { "space": "Large Room", "seats": 195 },
+        { "space": "Entire Venue", "seats": 360 },
+    ]
+
     return (
         <CONTAINER>
             <ROW>
@@ -18,24 +24,18 @@ const OpenAndAvailableForAllEventOccasion = () => {
                         </PARAGRAPH>
                     </MARGIN_10>
                     <FIELDSET>
-                        <FIELDCIRCLE>
-                            <FIELD>
-                                <FIELDTEXT> Small Room </FIELDTEXT>
-                                <FIELDTEXT> Seats 165 </FIELDTEXT>
-                            </FIELD>
-                        </FIELDCIRCLE>
-                        <FIELDCIRCLE>
-                            <FIELD>
-                                <FIELDTEXT> Large Room </FIELDTEXT>
-                                <FIELDTEXT> Seats 195 </FIELDTEXT>
-                            </FIELD>
-                        </FIELDCIRCLE>
-                        <FIELDCIRCLE>
-                            <FIELD>
-                                <FIELDTEXT> Entire Venue</FIELDTEXT>
-                                <FIELDTEXT> Seats 360 </FIELDTEXT>
-                            </FIELD>
-                        </FIELDCIRCLE>
+                        {
+                            eventSpace.map((value) => {
+                                return(
+                                    <FIELDCIRCLE>
+                                        <FIELD>
+                                            <FIELDTEXT> { value.space } </FIELDTEXT>
+                                            <FIELDTEXT> Seats { value.seats } </FIELDTEXT>
+                                        </FIELD>
+                                    </FIELDCIRCLE>
+                                )
+                            })
+                        }
                     </FIELDSET>
                     <LINK to={"pricing"}>
                         <HEADTEXT6>SEE OUR PRICING</HEADTEXT6>
@@ -50,7 +50,7 @@ const OpenAndAvailableForAllEventOccasion = () => {
 // STYLED COMPONENTS
 const CONTAINER = styled.div`
     border: 1px solid inherit;
-    padding: 50px 0;
+    padding: 20px 0;
     background: url(${AffordableSpace});
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,11 +1,9 @@
 import styled from 'styled-components'
-import { H1, H5 } from '../styledComponents/Typography.styles'
 import Available from '../../assets/available.jpg'
 
 const BookingsHeroSection = () => {
     return (
         <>
-        <NAVBAR_AREA_PADDING></NAVBAR_AREA_PADDING>
         <CONTAINER>
             <ROW>
                 <BOX>
@@ -20,9 +18,6 @@ const BookingsHeroSection = () => {
 
 
 // STYLED COMPONENTS
-const NAVBAR_AREA_PADDING = styled.div`
-    padding: 52px;
-`
 const CONTAINER = styled.div`
     border: 1px solid inherit;
     padding: 20px 0;
@@ -42,7 +37,7 @@ const CONTAINER = styled.div`
         content: "";
         z-index: -1;
         background: rgba(0, 139, 139, 0.5);
-    }
+    } 
 `
 const ROW = styled.div`
     border: 1px solid inherit;
@@ -64,6 +59,17 @@ const BOX = styled.div`
     text-align: center;
     color: white;
 `
+const H1 = styled.h1`
+    font-size: 48px;
+`
+const H5 = styled.h5`
+    font-size: 26px;
+`
+
+
+
+
+
 
 
 export default BookingsHeroSection

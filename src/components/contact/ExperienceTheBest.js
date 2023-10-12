@@ -32,7 +32,7 @@ const ExperienceTheBest = () => {
 // styled components
 
 const FLEXBOX = styled.div`
-    border: 1px solid red;
+    border: 1px solid inherit;
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
@@ -40,23 +40,24 @@ const FLEXBOX = styled.div`
 `
 
 const BOX = styled.div`
-    border: 1px solid green;
+    border: 1px solid inherit;
     display: flex;
     margin: 0 auto;
     max-width: 1200px;
     justify-content: center;
     align-content: center;
 `
-const H3 = styled.h3`
+const H3 = styled.span`
     font-size: 28px;
     color: darkcyan;
+    font-weight: bold;
 `
-const P = styled.p`
+const P = styled.span`
     font-size: 18px;
     color: gray;
 `
 const TEXTBOX = styled.div`
-    border: 1px solid blue;
+    border: 1px solid inherit;
     display: flex;
     flex-direction: column;
     max-width: 800px;
@@ -69,8 +70,8 @@ const TEXT = styled(P)`
     border: 1px solid inherit;
 `
 const IMAGEBOX = styled.div`
-    border: 1px solid yellow;
-    width: 600px;
+    border: 1px solid inherit;
+    width: 650px;
 `
 const IMG = styled.img`
     width: 100%;

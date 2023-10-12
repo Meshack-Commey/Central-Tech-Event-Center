@@ -7,6 +7,7 @@ import BookingsComponents from "./components/BookingsComponents"
 import PricingComponents from "./components/PricingComponents"
 import GalleryComponents from "./components/GalleryComponents"
 import ContactUsComponents from "./components/ContactUsComponents"
+//import SketchingSolutionPage from "./pages/SketchingSolutionPage"
 
 
 const EventCenterApp = () => {
@@ -14,7 +15,7 @@ const EventCenterApp = () => {
         <BrowserRouter>
 
 
-            <NavigationBar /> 
+            <NavigationBar />  
             
             <Routes>
                 <Route path="/" element={ <LandingPage /> } />
@@ -24,7 +25,7 @@ const EventCenterApp = () => {
                 <Route path="contact" element={ <ContactUsComponents /> } />
             </Routes>
 
-            <Footer />
+            <Footer /> 
 
         </BrowserRouter>
     )
