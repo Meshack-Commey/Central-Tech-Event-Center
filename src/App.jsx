@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-//import NavigationBar from "./components/NavigationBar"
+import NavigationBar from "./components/NavigationBar"
 import LandingPage from "./pages/LandingPage"
-//import Footer from "./components/Footer"
+import Footer from "./components/Footer"
 import BookingsComponents from "./components/BookingsComponents"
 import PricingComponents from "./components/PricingComponents"
 import GalleryComponents from "./components/GalleryComponents"
@@ -15,7 +15,7 @@ const EventCenterApp = () => {
         <BrowserRouter>
 
 
-            {/* <NavigationBar />   */}
+            <NavigationBar />   
             
             <Routes>
                 <Route path="/" element={ <LandingPage /> } />
@@ -25,7 +25,7 @@ const EventCenterApp = () => {
                 <Route path="contact" element={ <ContactUsComponents /> } />
             </Routes>
 
-            {/* <Footer />  */}
+            <Footer />  
 
         </BrowserRouter>
     )
