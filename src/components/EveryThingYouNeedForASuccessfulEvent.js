@@ -37,6 +37,8 @@ const EveryThingYouNeedForASuccessfulEvent = () => {
 
 export default EveryThingYouNeedForASuccessfulEvent;
 
+
+
 // styled components
 const CONTAINER = styled.div`
   border: 1px solid inherit;

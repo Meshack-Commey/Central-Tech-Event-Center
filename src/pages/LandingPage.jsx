@@ -5,8 +5,8 @@ import OurSpaceYourVision from "../components/OurSpaceYourVision"
 import TopEventVenueSection from "../components/TopEventVenueSection"
 import TopOfTheLineAmenities from "../components/TopOfTheLineAmenities"
 import CelebrateWithYourCommunity from "../components/CelebrateWithYourCommunity"
-import QualityAffordableEventSpace from "../components/QualityAffordableEventSpace"
-import ContactUs from "../components/ContactUs"
+// import QualityAffordableEventSpace from "../components/QualityAffordableEventSpace"
+// import ContactUs from "../components/ContactUs"
 
 
 
@@ -19,9 +19,9 @@ const LandingPage = () => {
             <OpenAndAvailableForAllEventOccasion />             
             <OurSpaceYourVision /> 
             <TopOfTheLineAmenities /> 
-            <CelebrateWithYourCommunity />
+            <CelebrateWithYourCommunity /> {/*
             <QualityAffordableEventSpace />
-            <ContactUs />  
+            <ContactUs />   */}
         </>
     )
 }

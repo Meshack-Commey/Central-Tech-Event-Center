@@ -39,6 +39,11 @@ const FLEXBOX = styled.div`
     max-width: 1100px;
     margin: 0 auto;
     gap: 100px;
+
+    @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
 `
 
 const BOX = styled.div`
@@ -52,12 +57,33 @@ const BOX = styled.div`
 const H1 = styled.h1`
     font-size: 48px;
     color: darkcyan;
+
+    @media only screen and (max-width: 1024px) {
+        text-align: center;
+    }
+    @media only screen and (max-width: 745px) {
+        font-size: 2.5rem;
+    }
+    @media only screen and (max-width: 654px) {
+        font-size: 2rem;
+    }
+    @media only screen and (max-width: 480px) {
+        font-size: 1.8rem;
+    }
+    @media only screen and (max-width: 384px) {
+        font-size: 1.5rem;
+        padding: 0 20px;
+    }
 `
 const LINK = styled(Link)`
     font-size: 28px;
     font-weight: bolder;
     color: darkcyan;
     text-decoration: underline;
+
+    @media (max-width: 1024px) {
+        font-size: 1.4rem;
+    }
 `
 const P = styled.p`
     font-size: 18px;
