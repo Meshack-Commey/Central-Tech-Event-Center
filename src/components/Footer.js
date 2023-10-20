@@ -9,7 +9,7 @@ const Footer = () => {
         <FOOTER>
             <FOOTEROW>
                 <TEXT>
-                    &copy; { Year } Central Tech Event Center. All Rights Reserved.
+                    &copy; { Year } Central Tech Event Center. All Rights Reserved. Website by <LINK href="https://meshack-commey.onrender.com" target="_blank">Meshack Commey</LINK>
                 </TEXT>
             </FOOTEROW>
         </FOOTER>
@@ -26,13 +26,18 @@ const FOOTEROW = styled.div`
     border: 1px solid inherit;
     display: flex;
     margin: 0 auto;
-    max-width: 1000px;
-    justify-content: left;
-    align-content: left;
+    max-width: 1200px;
+    justify-content: ;
+    align-content: ;
 `
 const TEXT = styled.p`
     color: white;
-    font-size: 18px;
+    font-size: 1rem;
+    text-align: left;
+`
+const LINK = styled.a`
+    color: white;
+    cursor: pointer;
 `
 
 export default Footer

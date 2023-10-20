@@ -78,10 +78,22 @@ const BOX = styled.div`
 const IMAGEBOX = styled.figure`
     border: 1px solid inherit;
     display: flex;
-    width: 400px;
-    max-width: 400px;
+    width: 360px;
     justify-content: center;
     align-content: center;
+
+    @media (max-width: 1024px) {
+        width: 600px;
+    }
+    @media (max-width: 699px) {
+        width: 400px;
+    }
+    @media (max-width: 480px) {
+        width: 300px;
+    }
+    @media (max-width: 319px) {
+        width: 200px;
+    }
 `
 const IMG = styled.img`
     width: 100%;

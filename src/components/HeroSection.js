@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 import HeroPic from '../assets/herobg.jpg'
 
 const HeroSection = () => {
@@ -9,7 +10,7 @@ const HeroSection = () => {
                 <HEROBOX>
                     <HEROTEXT> the perfect place to create lasting memories </HEROTEXT>
                     <HEROPARAGRAPH>At Central Tech Event Center, we understand that memorable occasions deserve a special place to be celebrated. Our venue is the perfect location for any event.</HEROPARAGRAPH>
-                    <BUTTON>Book Now</BUTTON>
+                    <LINK to={"bookings"} > <BUTTON>Book Now</BUTTON> </LINK>
                 </HEROBOX>
             </ROW>
         </CONTAINER>
@@ -89,6 +90,9 @@ const HEROPARAGRAPH = styled.p`
     color: white;
     text-align: justify;
     width: 90%;
+`
+const LINK = styled(Link)`
+    text-decoration: none;
 `
 const BUTTON = styled.button`
     border: 1px solid darkcyan;

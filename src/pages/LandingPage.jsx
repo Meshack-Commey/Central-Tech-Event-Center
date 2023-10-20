@@ -13,11 +13,11 @@ import ContactUs from "../components/ContactUs"
 const LandingPage = () => {
     return (
         <>
-            <HeroSection />
-            <TopEventVenueSection />
-            <EveryThingYouNeedForASuccessfulEvent />   
-            <OpenAndAvailableForAllEventOccasion />             
-            <OurSpaceYourVision /> 
+            <HeroSection /> 
+            <TopEventVenueSection /> 
+            <EveryThingYouNeedForASuccessfulEvent />  
+            <OpenAndAvailableForAllEventOccasion />
+            <OurSpaceYourVision />  
             <TopOfTheLineAmenities /> 
             <CelebrateWithYourCommunity /> 
             <QualityAffordableEventSpace />

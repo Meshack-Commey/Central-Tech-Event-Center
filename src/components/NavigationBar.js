@@ -63,12 +63,12 @@ const CONTAINER = styled.div`
     z-index: 9999;
     top: 0;
     
-    @media only screen and (max-width: 1024px) {
-        width: 90%;
+    ${'' /* @media only screen and (max-width: 1024px) {
+        width: 100%;
     }
     @media only screen and (max-width: 988px) {
-        width: 90%;
-    }
+        width: 100%;
+    } */}
 `
 const LOGO_BOX = styled.div`
     border: 1px solid inherit;

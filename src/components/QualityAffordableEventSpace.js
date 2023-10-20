@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { ROW, BOX } from './styledComponents/Container'
-import { H1, H6, P } from './styledComponents/Typography.styles'
+import { H6, P } from './styledComponents/Typography.styles'
 
 import AffordableSpace from '../assets/affordablespace.jpg'
 
@@ -16,7 +16,7 @@ const OpenAndAvailableForAllEventOccasion = () => {
         <CONTAINER>
             <ROW>
                 <BOX>
-                    <HEADTEXT1> QUALITY, AFFORDABLE EVENT SPACE IN TECH </HEADTEXT1>
+                    <H1> QUALITY, AFFORDABLE EVENT SPACE IN TECH </H1>
                     <MARGIN_10>
                         <PARAGRAPH>
                             We value every person that comes through our doors and strive to keep our rental space affordable and
@@ -73,16 +73,39 @@ const LINK = styled(Link)`
     font-weight: bolder;
     color: white;
 `
-const HEADTEXT1 = styled(H1)`
+const H1 = styled.h1`
+    font-size: 38px;
     color: snow;
+    padding: 1rem;
+
+    @media only screen and (max-width: 745px) {
+        font-size: 2.5rem;
+    }
+    @media only screen and (max-width: 654px) {
+        font-size: 2rem;
+    }
+    @media only screen and (max-width: 480px) {
+        font-size: 1.8rem;
+    }
+    @media only screen and (max-width: 328px) {
+        font-size: 1.5rem;
+    }
 `
 const HEADTEXT6 = styled(H6)`
     color: white;
 `
 const PARAGRAPH = styled(P)`
+    font-size: 1.2rem;
     color: white;
+    border: 1px solid inherit;
+    max-width: 690px;
     margin: 0 auto;
-    max-width: 1000px;
+    padding: 1rem;
+
+    @media (max-width: 480px) {
+        text-align: justify;
+        padding: 2rem;
+    }
 `
 const MARGIN_10 = styled.span`
     margin: 10px 0;
@@ -90,11 +113,19 @@ const MARGIN_10 = styled.span`
 const FIELDSET = styled.span`
     border: 1px solid inherit;
     margin: 50px auto;
-    max-width: 500px;
+    max-width: 800px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     gap: 100px;
+
+    @media (max-width: 1024px) {
+        gap: 3rem;
+    }
+    @media (max-width: 480px) {
+        gap: 2rem;
+    }
 `
 const FIELDCIRCLE = styled.span`
     border: 1px solid snow;
@@ -114,10 +145,19 @@ const FIELD = styled(FIELDCIRCLE)`
     background: white;
     color: darkcyan;
     font-weight: bolder;
+
+    @media (max-width: 599px) {
+        height: 120px;
+        width: 120px;
+    }
 `
 const FIELDTEXT = styled(P)`
     border: 1px solid inherit;
     font-weight: bolder;
+
+    @media (max-width: 599px) {
+        font-size: .9rem;
+    }
 `
 
 

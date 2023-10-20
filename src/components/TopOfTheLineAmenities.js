@@ -72,7 +72,7 @@ export default TopOfTheLineAmenities
 
 // styled components
 const CONTAINER = styled.div`
-    border: 1px solid inheirt;
+    border: 1px solid inherit;
     background: inherit;
 `
 
@@ -128,6 +128,20 @@ const ICONBOX = styled.div`
 const H1 = styled.h1`
     font-size: 38px;
     color: darkcyan;
+    padding: 1rem;
+
+    @media only screen and (max-width: 745px) {
+        font-size: 2.5rem;
+    }
+    @media only screen and (max-width: 654px) {
+        font-size: 2rem;
+    }
+    @media only screen and (max-width: 480px) {
+        font-size: 1.8rem;
+    }
+    @media only screen and (max-width: 328px) {
+        font-size: 1.5rem;
+    }
 `
 const P = styled.p`
     font-size: 18px;

@@ -15,7 +15,7 @@ const EventCenterApp = () => {
         <BrowserRouter>
 
 
-            <NavigationBar />   
+            <NavigationBar />
             
             <Routes>
                 <Route path="/" element={ <LandingPage /> } />
